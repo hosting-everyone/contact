@@ -1,0 +1,31 @@
+#adminPanel {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#adminPanel h3 {
+    margin-top: 0;
+}
+
+#adminResponse {
+    height: 100px;
+}
+
+#closeTicketBtn {
+    display: block;
+    margin-top: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeTicketBtn:hover {
+    background-color: #ff483e;
+}
