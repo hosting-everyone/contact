@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpdesk</title>
-    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Helpdesk</h1>
-    <div id="tickets"></div>
-    <form id="ticketForm">
-        <input type="text" id="subject" placeholder="Onderwerp" required>
-        <textarea id="description" placeholder="Beschrijving" required></textarea>
-        <button type="submit">Ticket indienen</button>
-    </form>
+    <div class="container">
+        <h1>Helpdesk</h1>
+        <div id="ticketForm" class="form-container"></div>
+        <div id="userTickets" class="ticket-container"></div>
+        <div id="adminPanel" class="admin-panel"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
