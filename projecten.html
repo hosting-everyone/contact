@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Projecten</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Kleurklasse voor de kaarten */
+        .blue-card {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .green-card {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        .purple-card {
+            background-color: #9b59b6;
+            color: #fff;
+        }
+        
+        .red-card {
+            background-color: #ff0000;
+            color: #fff;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mijn Projecten</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">Over ons</a></li>
+                <li><a href="503">Portofolio</a></li>
+                <li><a href="projecten">Projecten</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card blue-card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="card-content">
+                    <h2 class="card-title">Project 1</h2>
+                    <p class="card-description">Dit is een beschrijving van project 1.</p>
+                </div>
+            </div>
+
+            <div class="card green-card">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h2 class="card-title">Project 2</h2>
+                    <p class="card-description">Dit is een beschrijving van project 2.</p>
+                </div>
+            </div>
+
+            <div class="card purple-card">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="card-content">
+                    <h2 class="card-title">Project 3</h2>
+                    <p class="card-description">Dit is een beschrijving van project 3.</p>
+                </div>
+            </div>
+            
+            <div class="card red-card">
+                <img src="project4.jpg" alt="Project 4">
+                <div class="card-content">
+                    <h2 class="card-title">Project 4</h2>
+                    <p class="card-description">Dit is een beschrijving van project 4.</p>
+                </div>
+            </div>
+
+            <!-- Voeg meer kaarten toe voor extra projecten -->
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jouw Bedrijfsnaam</p>
+    </footer>
+</body>
+</html>
