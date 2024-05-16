@@ -13,9 +13,17 @@
         // Controleer de status van de onderhoudsmodus
         const maintenanceMode = localStorage.getItem('maintenanceMode');
         
-        // Als de onderhoudsmodus is uitgeschakeld en de gebruiker niet al op de onderhoudspagina is
-        if (maintenanceMode !== 'on' && window.location.pathname !== 'maintenance') {
-            window.location.href = '/'; // Doorsturen naar de homepagina
+        // Als de onderhoudsmodus is ingeschakeld
+        if (maintenanceMode === 'on') {
+            // Als de gebruiker niet al op de onderhoudspagina is, doorsturen naar de onderhoudspagina
+            if (window.location.pathname !== '/maintenance') {
+                window.location.href = 'maintenance.html';
+            }
+        } else {
+            // Als de onderhoudsmodus is uitgeschakeld, doorsturen naar de homepagina
+            if (window.location.pathname === '/maintenance') {
+                window.location.href = '/';
+            }
         }
     </script>
 </body>
