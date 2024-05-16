@@ -14,7 +14,7 @@ window.onload = function() {
 
                 // Als de onderhoudsmodus is ingeschakeld, doorsturen naar de onderhoudspagina
                 if (maintenanceMode === true) {
-                    window.location.href = 'maintenance_page.html';
+                    window.location.href = 'maintenance';
                 }
             }
         };
