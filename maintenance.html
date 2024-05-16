@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="maintenace.css">
     <link data-n-head='ssr' rel='icon' type='image/x-icon' href='favicon.icon'>
-    <title>Onderhoud</title>
+    <title>Mijn Website</title>
 </head>
 <body>
-    <h1>Deze website is momenteel in onderhoud</h1>
-    <p>Probeer het later opnieuw.</p>
+    <h1>Welkom op mijn website</h1>
+    
+    <script>
+        // Controleer de status van de onderhoudsmodus
+        const maintenanceMode = localStorage.getItem('maintenanceMode');
+        
+        // Als de onderhoudsmodus is ingeschakeld, doorsturen naar de onderhoudspagina
+        if (maintenanceMode === 'on') {
+            window.location.href = 'maintenance.html';
+        }
+    </script>
 </body>
 </html>
