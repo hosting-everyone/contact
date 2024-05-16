@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="maintenace.css">
-    <link data-n-head='ssr' rel='icon' type='image/x-icon' href='favicon.icon'>    
     <title>Onderhoud</title>
 </head>
 <body>
     <h1>Deze website is momenteel in onderhoud</h1>
-    <p>Probeer het later opnieuw.</p>
-</body>
-</html>
+    <p>We werken eraan om de website snel weer beschikbaar te maken. Bedankt voor je geduld.</p>
+    
     <script>
         // Controleer de status van de onderhoudsmodus
         const maintenanceMode = localStorage.getItem('maintenanceMode');
         
-        // Als de onderhoudsmodus is ingeschakeld, doorsturen naar de onderhoudspagina
-        if (maintenanceMode === 'on') {
+        // Als de onderhoudsmodus is uitgeschakeld, doorsturen naar de homepagina
+        if (maintenanceMode !== 'on') {
             window.location.href = 'maintenance';
         }
     </script>
 </body>
 </html>
+
