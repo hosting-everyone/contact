@@ -13,11 +13,10 @@
         // Controleer de status van de onderhoudsmodus
         const maintenanceMode = localStorage.getItem('maintenanceMode');
         
-        // Als de onderhoudsmodus is uitgeschakeld, doorsturen naar de homepagina
-        if (maintenanceMode !== 'on') {
-            window.location.href = 'maintenance';
+        // Als de onderhoudsmodus is uitgeschakeld en de gebruiker niet al op de onderhoudspagina is
+        if (maintenanceMode !== 'on' && window.location.pathname !== 'maintenance') {
+            window.location.href = ''; // Doorsturen naar de homepagina
         }
     </script>
 </body>
 </html>
-
